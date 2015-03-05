@@ -26,7 +26,7 @@ as it's final and a port for 2.9.x is in progress.
 [![Build Status](https://travis-ci.org/alexandru/shade.png?branch=v1.6.0)](https://travis-ci.org/alexandru/shade)
 
 ## Release Notes
-
+- [Version 1.7.0m1 - March 5, 2015] (release-notes/1.7.0m1.md) (unofficial builds)
 - [Version 1.6.0 - April 26, 2014](release-notes/1.6.0.md)
 
 ## Usage From SBT
@@ -245,3 +245,28 @@ N.B.
 are a much better alternative to Java's object input/output streams,
 when they'll land in Scala 2.11.
 
+### Building and pushing to your local nexus
+
+To push to your local nexus, edit the ~/.sbt/mynexus.settings
+
+e.g.
+```
+nexus.root=http://mynexus
+nexus.releasesPath=/nexus/content/repositories/releases
+nexus.snapshotPath=/nexus/content/repositories/snapshots
+```
+
+Create or edit your nexus credential on 
+
+```
+<your home folder>/.ivy2/.credentials
+```
+
+Example for <your home folder>/.ivy2/.credentials
+
+```
+realm=Sonatype Nexus Repository Manager
+host=nexus.scala-tools.org
+user=admin
+password=admin123
+```
