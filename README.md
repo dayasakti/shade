@@ -26,7 +26,7 @@ as it's final and a port for 2.9.x is in progress.
 [![Build Status](https://travis-ci.org/alexandru/shade.png?branch=v1.6.0)](https://travis-ci.org/alexandru/shade)
 
 ## Release Notes
-
+- [Version 1.7.0m1 - March 5, 2015] (release-notes/1.7.0m1.md) (unofficial builds)
 - [Version 1.6.0 - April 26, 2014](release-notes/1.6.0.md)
 
 ## Usage From SBT
