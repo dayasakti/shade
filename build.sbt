@@ -2,7 +2,9 @@ name := "shade"
 
 organization := "com.bionicspirit"
 
-version := "1.7.0m1-SNAPSHOT"
+val buildVer = "1.7.0m1-SNAPSHOT"
+
+version := buildVer
 
 scalaVersion := "2.10.4"
 
@@ -34,13 +36,9 @@ publishMavenStyle := true
 
 publishArtifact in Test := false
 
-publishTo := {
-  val nexus = "https://oss.sonatype.org/"
-  if (isSnapshot.value)
-    Some("snapshots" at nexus + "content/repositories/snapshots")
-  else
-    Some("releases"  at nexus + "service/local/staging/deploy/maven2")
-}
+credentials += Credentials(Path.userHome / ".ivy2" / ".credentials")
+
+publishTo := Some(sbtcustom.Config.nexusPublishPath(buildVer))
 
 publishArtifact in Test := false
 
