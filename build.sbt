@@ -2,7 +2,7 @@ name := "shade"
 
 organization := "com.bionicspirit"
 
-version := "1.7.0m1"
+version := "1.7.0m1-SNAPSHOT"
 
 scalaVersion := "2.10.4"
 

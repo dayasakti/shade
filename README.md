@@ -245,3 +245,25 @@ N.B.
 are a much better alternative to Java's object input/output streams,
 when they'll land in Scala 2.11.
 
+### Building and pushing to your local nexus
+
+To push to your local nexus, edit the ~/.sbt/mynexus.settings
+
+e.g.
+```
+nexus.root=http://mynexus
+nexus.releasesPath=/nexus/content/repositories/releases
+nexus.snapshotPath=/nexus/content/repositories/snapshots
+```
+
+Set your nexus credential here:
+credentials += Credentials(Path.userHome / ".ivy2" / ".credentials")
+
+Example of ~/.ivy2/.credentials
+
+```
+realm=Sonatype Nexus Repository Manager
+host=nexus.scala-tools.org
+user=admin
+password=admin123
+```
