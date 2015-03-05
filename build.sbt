@@ -2,7 +2,7 @@ name := "shade"
 
 organization := "com.bionicspirit"
 
-val buildVer = "1.7.0m1-SNAPSHOT"
+val buildVer = "1.7.0m1"
 
 version := buildVer
 
