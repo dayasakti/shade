@@ -256,10 +256,13 @@ nexus.releasesPath=/nexus/content/repositories/releases
 nexus.snapshotPath=/nexus/content/repositories/snapshots
 ```
 
-Set your nexus credential here:
-credentials += Credentials(Path.userHome / ".ivy2" / ".credentials")
+Create or edit your nexus credential on 
 
-Example of ~/.ivy2/.credentials
+```
+<your home folder>/.ivy2/.credentials
+```
+
+Example for <your home folder>/.ivy2/.credentials
 
 ```
 realm=Sonatype Nexus Repository Manager
